@@ -1,7 +1,7 @@
 <template>
     <div class="backlog">
         <h1>Product Backlog</h1>
-<!--        <div class="holder">-->
+        <div id="holder">
             <table>
                 <tr>
                     <th>Front-end</th>
@@ -32,7 +32,7 @@
                 </tr>
             </table>
         </div>
-<!--    </div>-->
+    </div>
 </template>
 
 <script>
@@ -97,9 +97,12 @@ h3{
 table{
     border: 1px solid black;
     width: 50%;
-    position: fixed;
+    /*position: fixed;*/
+    position: absolute;
     left: 50%;
     margin-left: -25%; /*half of the width*/
+    margin-bottom: 30px;
+    background: rgba(255,255,255,100);
 }
 
 th{
@@ -113,13 +116,8 @@ td {
     vertical-align: top;
 }
 
-/*.holder{*/
-/*    border-style: dashed;*/
-/*    border-width: thin;*/
-/*    text-align: left;*/
-/*    width: 40%;*/
-/*    position: fixed;*/
-/*    left: 50%;*/
-/*    margin-left: -20%;*/
-/*}*/
+.backlog {
+
+}
+
 </style>
